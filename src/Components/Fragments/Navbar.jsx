@@ -19,7 +19,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='w-full left-0 z-50 top-0 py-7'>
+        <div className='w-full left-0 z-50 top-0 py-7 mx-auto max-w-[1200px]'>
             <div className="flex justify-between items-center px-6">
                 {/* Logo */}
                 <img src={Logo} className='w-[100px] md:w-[120px]' />
@@ -36,7 +36,6 @@ const Navbar = () => {
                     {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
                 </div>
             </div>
-
             {/* Mobile Menu */}
             <div className={`fixed left-0 top-0 w-[60%] h-full bg-gray-900 text-white p-5 ease-in-out duration-300 ${nav ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="flex justify-between items-center">
