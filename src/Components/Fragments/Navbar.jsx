@@ -19,10 +19,10 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='w-full left-0 z-50 top-0'>
+        <div className='w-full left-0 z-50 top-0 py-7'>
             <div className="flex justify-between items-center px-6">
                 {/* Logo */}
-                <img src={Logo} className='w-[130px] md:w-[170px]' />
+                <img src={Logo} className='w-[100px] md:w-[120px]' />
 
                 {/* Desktop Navbar */}
                 <div className="hidden md:flex gap-9 pr-4">
