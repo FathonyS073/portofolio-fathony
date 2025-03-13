@@ -1,5 +1,7 @@
 import React from 'react'
 import PictureHero from '../../assets/Picture/Hero.png'
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
