@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'; // Perbaiki nama ikon
-import Logo from '../assets/Picture/Logo.png';
-import NavbarItem from './Elements/NavbarItem';
+import Logo from '../../assets/Picture/Logo.png';
+import NavbarItem from '../Elements/NavbarItem';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
         <div className='w-full left-0 z-50 top-0'>
-            <div className="flex justify-between items-center px-6">
+            <div className="flex justify-between items-center px-6 py-4">
                 {/* Logo */}
                 <img src={Logo} className='w-[130px] md:w-[170px]' />
 
