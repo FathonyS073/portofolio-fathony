@@ -9,7 +9,19 @@ const Hero = () => {
       <div className='bg-white max-w-[1200px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center align-center'>
         <div className="bg-blue-300 flex-col my-auto mx-auto">
           <p className='text-xl md:text-5xl sm:text-4xl font-bold text-gray-400'>Hello I'm Fathony</p>
-          <h1 className='text-2xl md:text-5xl sm:text-4xl font-bold md:py-6'>I'm a <TypeAnimation sequence={['Front-End Developer', 1000, 'Back-End Developer', 1000]} wrapper="h1" cursor={true} repeat={Infinity} /></h1>
+          <h1 className='text-2xl md:text-5xl sm:text-4xl font-bold'>I'm a 
+            <TypeAnimation 
+            sequence={
+              [
+                'UI/UX Design', 1000, 
+                'Web Developer', 1000,
+                'Data Science', 1000,
+
+              ]} 
+              wrapper="h1" 
+              cursor={true} 
+              repeat={Infinity} />
+          </h1>
 
         </div>
         <div className="my-auto">
