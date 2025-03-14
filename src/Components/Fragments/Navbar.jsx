@@ -19,7 +19,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className='w-full left-0 z-50 top-0 py-7 mx-auto max-w-[1200px]'>
+        <div className=' left-0 z-50 top-0 py-7 mx-auto max-w-[1200px]'>
             <div className="flex justify-between items-center px-6">
                 {/* Logo */}
                 <img src={Logo} className='w-[100px] md:w-[120px]' />
