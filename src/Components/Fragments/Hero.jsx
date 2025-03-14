@@ -8,8 +8,10 @@ const Hero = () => {
     <div>
       <div className='bg-white max-w-[1200px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center align-center'>
         <div className="bg-blue-300 flex-col my-auto mx-auto">
-          <p className='text-xl md:text-5xl sm:text-4xl font-bold text-gray-400'>Hello I'm Fathony</p>
-          <h1 className='text-2xl md:text-5xl sm:text-4xl font-bold'>I'm a 
+          <p className='text-xl md:text-6md sm:text-4md text-gray-400 py-3'>Hello!</p>
+          <h1 class="text-3xl md:text-5lg sm:text-4lg font-bold">I'am Fathony</h1>
+          <p className='text-lg md:text-6md sm:text-4md text-gray-400 py-3'>Currently Learning about</p>
+          <h1 className='text-2xl md:text-5xl sm:text-4xl font-bold'> 
             <TypeAnimation 
             sequence={
               [
@@ -22,6 +24,9 @@ const Hero = () => {
               cursor={true} 
               repeat={Infinity} />
           </h1>
+          <div className="flex justify-center items-center">
+            <p className='text-xl md:text-5xl sm:text-4xl font-bold text-gray-400'> </p>
+          </div>
 
         </div>
         <div className="my-auto">
