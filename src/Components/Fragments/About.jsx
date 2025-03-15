@@ -6,18 +6,18 @@ const About = () => {
     <div className="py-10 text-white bg-[#232325] h-auto" id="about">
       <div className="flex sm:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
         {/* Gambar */}
-        <div className="w-full h-[300px]">
+        <div className="w-full flex-1">
           <img
             src={AboutPicture}
-            alt=""
-            className="object-cover rounded-xl h-full w-full filter grayscale hover:grayscale-0"
+            alt="About Me"
+            className="object-cover rounded-xl w-full h-auto filter grayscale hover:grayscale-0"
           />
         </div>
 
         {/* Konten */}
-        <div className="flex flex-col w-full">
+        <div className="flex flex-col flex-1">
           <div className="p-2">
-            <div className="text-gray-300 my-3">
+            <div className="text-gray-300">
               <h3 className="text-4xl font-semibold mb-5">
                 About <span className="primary-text">Me</span>
               </h3>
@@ -40,12 +40,24 @@ const About = () => {
           </div>
 
           {/* Section Projects di bawah */}
-          <div className="flex justify-start mt-5">
+          <div className="flex justify-start ">
             <div className="bg-[#33333]/40 p-5 rounded-lg">
               <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                11 <span className="primary-text">+</span>
+                10 <span className="primary-text">+</span>
               </h3>
               <p className="md:text-base text-xs">Projects</p>
+            </div>
+            <div className="bg-[#33333]/40 p-5 rounded-lg">
+              <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                5 <span className="primary-text">+</span>
+              </h3>
+              <p className="md:text-base text-xs">achievement</p>
+            </div>
+            <div className="bg-[#33333]/40 p-5 rounded-lg">
+              <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                2<span className="primary-text">+</span>
+              </h3>
+              <p className="md:text-base text-xs">Experience</p>
             </div>
           </div>
         </div>
