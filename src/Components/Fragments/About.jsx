@@ -3,15 +3,50 @@ import AboutPicture from "../../assets/Picture/About.png";
 
 const About = () => {
   return (
-    <div className="text-white py-10 bg-[#232325] h-auto" id="about">
-      <div className="flex sm:flex-col-reverse items-center md:gap-12 px-10 max-w-6xl mx-auto">
-        <div>
-          <div className="w-[400px] h-full">
-            <img
-              src={AboutPicture}
-              alt=""
-              className="object-cover bg-gray-700 rounded-xl h-[300px] filter grayscale hover:grayscale-0 transition duration-500"
-            />
+    <div className="py-10 text-white bg-[#232325] h-auto" id="about">
+      <div className="flex sm:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
+        {/* Gambar */}
+        <div className="w-full h-[300px]">
+          <img
+            src={AboutPicture}
+            alt=""
+            className="object-cover rounded-xl h-full w-full filter grayscale hover:grayscale-0"
+          />
+        </div>
+
+        {/* Konten */}
+        <div className="flex flex-col w-full">
+          <div className="p-2">
+            <div className="text-gray-300 my-3">
+              <h3 className="text-4xl font-semibold mb-5">
+                About <span className="primary-text">Me</span>
+              </h3>
+              <p className="text-justify leading-7 mx-auto">
+                Hi, I’m <strong>Fathony Syaennulloh</strong>, a{" "}
+                <strong>UI/UX Designer, Data Analyst, and Web Developer</strong>{" "}
+                with a passion for{" "}
+                <strong>technology and self-development</strong>. I’ve won{" "}
+                <strong>national UI/UX competitions</strong>, mentored
+                designers, and built projects in{" "}
+                <strong>data analysis and web development</strong>. Skilled in{" "}
+                <strong>
+                  Figma, Adobe Suite, Tableau, Looker Studio, and Laravel
+                </strong>
+                , I focus on{" "}
+                <strong>user-centered designs and data-driven solutions</strong>
+                . Let’s connect and create something amazing! 🚀
+              </p>
+            </div>
+          </div>
+
+          {/* Section Projects di bawah */}
+          <div className="flex justify-start mt-5">
+            <div className="bg-[#33333]/40 p-5 rounded-lg">
+              <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                11 <span className="primary-text">+</span>
+              </h3>
+              <p className="md:text-base text-xs">Projects</p>
+            </div>
           </div>
         </div>
       </div>
