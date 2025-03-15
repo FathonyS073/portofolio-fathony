@@ -12,15 +12,18 @@ const Experience = () => {
     },
     {
       id: 2,
-      company: "Second Company",
-      time: "2020 - Present",
-      description: "Description Of Your Experience",
+      company: "PT Telekomunikasi Indonesia",
+      time: "July 2024 - November 2024",
+      position: "Internship UI/UX Designer",
+      description:
+        "I became Digistar Class at Telkom Indonesia for UI/UX Designer",
     },
     {
       id: 3,
-      company: "Third Company",
-      time: "2020 - Present",
-      description: "Description Of Your Experience",
+      company: "Freelance Employee",
+      position: "IT Spesialis (Web, Machine Learning, UI/UX Design)",
+      time: "2022 - Present",
+      description: "I'm Freelance Employee",
     },
   ];
 
