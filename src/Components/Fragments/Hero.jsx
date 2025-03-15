@@ -29,7 +29,7 @@ const Hero = () => {
               repeat={Infinity}
             />
           </h1>
-          <div className="text-3xl md:text-4xl flex justify-center md:justify-start gap-2 my-1 md:my-4">
+          <div className="text-3xl md:text-4xl flex justify-center md:justify-start gap-2 my-1 md:my-4 text-purple-600">
             <a target="_blank" href="https://github.com/FathonyS073">
               <AiFillGithub />
             </a>

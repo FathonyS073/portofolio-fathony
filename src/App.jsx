@@ -1,13 +1,15 @@
+import About from "./Components/Fragments/About";
 import Hero from "./Components/Fragments/Hero";
 import Navbar from "./Components/Fragments/Navbar";
 
 function App() {
-  return(
+  return (
     <>
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
+      <About />
     </>
   );
 }
 
-export default App
+export default App;
