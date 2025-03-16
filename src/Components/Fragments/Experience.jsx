@@ -8,22 +8,23 @@ const Experience = () => {
       position: "Internship IT Officer",
       time: "Februari 2025 - Present",
       description:
-        "I'm as IT Officer At PT Sumber Jaringan Sejahtera my Job desk Web Developer With ReactJS.",
+        "Developed and maintained the company's website using React.js and Node.js. Assisted in mobile app development with React Native, enhancing UI and performance. Managed client data processing to improve efficiency and collaborated on system security and data integration.",
     },
     {
       id: 2,
-      company: "PT Telekomunikasi Indonesia",
+      company: "Digistar Class & Digistar Club by Telkom Indonesia",
       time: "July 2024 - November 2024",
-      position: "Internship UI/UX Designer",
+      position: "Member – UI/UX & Data Science Enthusiast",
       description:
-        "I became Digistar Class at Telkom Indonesia for UI/UX Designer",
+        "Selected as one of 500 participants from 12,176 applicants. Trained in UI/UX Design and worked on the Looge Website Use Case. Continued in Digistar Club to explore Data Analysis & Business Intelligence, focusing on web scraping, product recommendation, and customer segmentation dashboards.",
     },
     {
       id: 3,
       company: "Freelance Employee",
       position: "IT Spesialis (Web, Machine Learning, UI/UX Design)",
       time: "2022 - Present",
-      description: "I'm Freelance Employee",
+      description:
+        "Worked on 15+ projects in website development, UI/UX design, and machine learning. Built responsive web apps, designed intuitive user experiences, and developed AI-driven solutions for various clients.",
     },
   ];
 
