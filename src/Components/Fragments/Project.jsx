@@ -1,6 +1,11 @@
 import React from "react";
 import Tab from "../Elements/Tabs";
 
+// Import Image
+import Mahaltra from "../../assets/Picture/Mahaltra.png";
+import DisneyClone from "../../assets/Picture/DisneyClone.png";
+import ProjectCard from "../Elements/ProjectCard";
+
 const PROJECT_TABS = [
   { id: "01", label: "All", value: "all" },
   { id: "02", label: "UiUx", value: "uiux" },
@@ -11,21 +16,24 @@ const PROJECT_TABS = [
 const PROJECT = [
   {
     id: "01",
-    project: "UI / UX 1",
+    projectTitle: "UI / UX 1",
+    projectImage: Mahaltra,
     type: "uiux",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
   },
   {
     id: "02",
-    project: "Web 1",
+    projectTitle: "Web 1",
+    projectImage: Mahaltra,
     type: "webdev",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
   },
   {
     id: "03",
-    project: "Data 1",
+    projectTitle: "Data 1",
+    projectImage: Mahaltra,
     type: "data",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
@@ -42,7 +50,7 @@ const Project = () => {
       setActiveTab("all");
       return;
     }
-    const updateList = PROJECT.filter((porto) => porto.type === value);
+    const updateList = PROJECT.filter((project) => project.type === value);
     setTabData(updateList);
     setActiveTab(value);
   };
@@ -68,6 +76,16 @@ const Project = () => {
         activeTab={activeTab}
         onChange={handleTabValueChange}
       />
+
+      {tabData.map((project, index) => (
+        <div key={project.id}>
+          <ProjectCard
+            projectImage={project.projectImage}
+            projectName={project.projectTitle}
+            description={project.description}
+          />
+        </div>
+      ))}
     </div>
   );
 };
