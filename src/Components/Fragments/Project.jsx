@@ -9,6 +9,7 @@ import Siperang from "../../assets/Picture/Siperang.png";
 import IpaMadura from "../../assets/Picture/IpaMadura.png";
 import Plita from "../../assets/Picture/Plita.png";
 import PtAku from "../../assets/Picture/PtAku.png";
+import two from "../../assets/Picture/2.png";
 
 const PROJECT_TABS = [
   { id: "01", label: "All", value: "all" },
@@ -30,6 +31,7 @@ const PROJECT = [
     id: "02",
     projectTitle: "Website IPA Madura",
     projectImage: IpaMadura,
+    tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
     description: "lorem ipsum",
   },
@@ -37,6 +39,7 @@ const PROJECT = [
     id: "03",
     projectTitle: "SiPerang",
     projectImage: Siperang,
+    tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
     description: "Lorem Ipsum",
   },
@@ -44,6 +47,7 @@ const PROJECT = [
     id: "04",
     projectTitle: "Web 1",
     projectImage: Plita,
+    tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
     description: "Web Dev",
   },
@@ -51,6 +55,7 @@ const PROJECT = [
     id: "04",
     projectTitle: "Data 1",
     projectImage: PtAku,
+    tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
     description: "Data",
   },
@@ -92,128 +97,17 @@ const Project = () => {
         activeTab={activeTab}
         onChange={handleTabValueChange}
       />
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 min-h-[230px]">
+      <div className="w-full gap-4 flex-wrap flex justify-center py-10">
         {tabData.map((project, index) => (
           <div key={project.id} className="my-3">
             <ProjectCard
               projectImage={project.projectImage}
               projectName={project.projectTitle}
+              tech={project.tech}
               description={project.description}
             />
           </div>
         ))}
-      </div> */}
-      <div className="w-full gap-4 flex-wrap flex justify-center py-10">
-        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
-          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
-          <div className="p-2">
-            {/* Heading */}
-            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
-            {/* Description */}
-            <p className="text-sm text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              quas voluptas eligendi!
-            </p>
-            {/* CTA */}
-          </div>
-          <div className="m-2">
-            <a
-              role="button"
-              href="#"
-              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
-          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
-          <div className="p-2">
-            {/* Heading */}
-            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
-            {/* Description */}
-            <p className="text-sm text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              quas voluptas eligendi!
-            </p>
-            {/* CTA */}
-          </div>
-          <div className="m-2">
-            <a
-              role="button"
-              href="#"
-              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
-          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
-          <div className="p-2">
-            {/* Heading */}
-            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
-            {/* Description */}
-            <p className="text-sm text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              quas voluptas eligendi!
-            </p>
-            {/* CTA */}
-          </div>
-          <div className="m-2">
-            <a
-              role="button"
-              href="#"
-              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
-          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
-          <div className="p-2">
-            {/* Heading */}
-            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
-            {/* Description */}
-            <p className="text-sm text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              quas voluptas eligendi!
-            </p>
-            {/* CTA */}
-          </div>
-          <div className="m-2">
-            <a
-              role="button"
-              href="#"
-              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
-          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
-          <div className="p-2">
-            {/* Heading */}
-            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
-            {/* Description */}
-            <p className="text-sm text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              quas voluptas eligendi!
-            </p>
-            {/* CTA */}
-          </div>
-          <div className="m-2">
-            <a
-              role="button"
-              href="#"
-              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   );
