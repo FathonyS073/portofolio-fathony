@@ -5,6 +5,10 @@ import Tab from "../Elements/Tabs";
 import Mahaltra from "../../assets/Picture/Mahaltra.png";
 import DisneyClone from "../../assets/Picture/DisneyClone.png";
 import ProjectCard from "../Elements/ProjectCard";
+import Siperang from "../../assets/Picture/Siperang.png";
+import IpaMadura from "../../assets/Picture/IpaMadura.png";
+import Plita from "../../assets/Picture/Plita.png";
+import PtAku from "../../assets/Picture/PtAku.png";
 
 const PROJECT_TABS = [
   { id: "01", label: "All", value: "all" },
@@ -16,37 +20,38 @@ const PROJECT_TABS = [
 const PROJECT = [
   {
     id: "01",
-    projectTitle: "UI / UX 1",
-    projectImage: Mahaltra,
-    type: "uiux",
-    description: "Ui/Ux",
+    projectTitle: "Website",
+    projectImage: DisneyClone,
+    tech: ["React Js", "Firebase", "Axios"],
+    type: "WebDev",
+    description: "Website Portofolio with React Js and Axios ",
   },
   {
     id: "02",
-    projectTitle: "Web 1",
-    projectImage: DisneyClone,
+    projectTitle: "Website IPA Madura",
+    projectImage: IpaMadura,
     type: "WebDev",
-    description: "Web Dev",
+    description: "lorem ipsum",
   },
   {
     id: "03",
-    projectTitle: "Data 1",
-    projectImage: Mahaltra,
-    type: "Data",
-    description: "Data",
+    projectTitle: "SiPerang",
+    projectImage: Siperang,
+    type: "WebDev",
+    description: "Lorem Ipsum",
   },
   {
-    id: "03",
+    id: "04",
     projectTitle: "Web 1",
-    projectImage: DisneyClone,
+    projectImage: Plita,
     type: "WebDev",
     description: "Web Dev",
   },
   {
     id: "04",
     projectTitle: "Data 1",
-    projectImage: Mahaltra,
-    type: "Data",
+    projectImage: PtAku,
+    type: "WebDev",
     description: "Data",
   },
 ];
@@ -87,7 +92,7 @@ const Project = () => {
         activeTab={activeTab}
         onChange={handleTabValueChange}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-h-[230px]">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 min-h-[230px]">
         {tabData.map((project, index) => (
           <div key={project.id} className="my-3">
             <ProjectCard
@@ -97,6 +102,118 @@ const Project = () => {
             />
           </div>
         ))}
+      </div> */}
+      <div className="w-full gap-4 flex-wrap flex justify-center py-10">
+        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
+          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
+          <div className="p-2">
+            {/* Heading */}
+            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
+            {/* Description */}
+            <p className="text-sm text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              quas voluptas eligendi!
+            </p>
+            {/* CTA */}
+          </div>
+          <div className="m-2">
+            <a
+              role="button"
+              href="#"
+              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
+          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
+          <div className="p-2">
+            {/* Heading */}
+            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
+            {/* Description */}
+            <p className="text-sm text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              quas voluptas eligendi!
+            </p>
+            {/* CTA */}
+          </div>
+          <div className="m-2">
+            <a
+              role="button"
+              href="#"
+              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
+          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
+          <div className="p-2">
+            {/* Heading */}
+            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
+            {/* Description */}
+            <p className="text-sm text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              quas voluptas eligendi!
+            </p>
+            {/* CTA */}
+          </div>
+          <div className="m-2">
+            <a
+              role="button"
+              href="#"
+              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
+          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
+          <div className="p-2">
+            {/* Heading */}
+            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
+            {/* Description */}
+            <p className="text-sm text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              quas voluptas eligendi!
+            </p>
+            {/* CTA */}
+          </div>
+          <div className="m-2">
+            <a
+              role="button"
+              href="#"
+              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div className="w-60 p-2 rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-white">
+          <img src={Mahaltra} className="object-cover rounded-xl" alt="" />
+          <div className="p-2">
+            {/* Heading */}
+            <h2 className="font-bold text-lg mb-2">Mahaltra</h2>
+            {/* Description */}
+            <p className="text-sm text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              quas voluptas eligendi!
+            </p>
+            {/* CTA */}
+          </div>
+          <div className="m-2">
+            <a
+              role="button"
+              href="#"
+              class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
