@@ -9,7 +9,7 @@ import ProjectCard from "../Elements/ProjectCard";
 const PROJECT_TABS = [
   { id: "01", label: "All", value: "all" },
   { id: "02", label: "UiUx", value: "uiux" },
-  { id: "03", label: "WebDev", value: "WebDev=" },
+  { id: "03", label: "WebDev", value: "WebDev" },
   { id: "04", label: "Data", value: "Data" },
 ];
 
@@ -19,24 +19,35 @@ const PROJECT = [
     projectTitle: "UI / UX 1",
     projectImage: Mahaltra,
     type: "uiux",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
+    description: "Ui/Ux",
   },
   {
     id: "02",
     projectTitle: "Web 1",
-    projectImage: Mahaltra,
-    type: "webdev",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
+    projectImage: DisneyClone,
+    type: "WebDev",
+    description: "Web Dev",
   },
   {
     id: "03",
     projectTitle: "Data 1",
     projectImage: Mahaltra,
-    type: "data",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
+    type: "Data",
+    description: "Data",
+  },
+  {
+    id: "03",
+    projectTitle: "Web 1",
+    projectImage: DisneyClone,
+    type: "WebDev",
+    description: "Web Dev",
+  },
+  {
+    id: "04",
+    projectTitle: "Data 1",
+    projectImage: Mahaltra,
+    type: "Data",
+    description: "Data",
   },
 ];
 
@@ -76,16 +87,17 @@ const Project = () => {
         activeTab={activeTab}
         onChange={handleTabValueChange}
       />
-
-      {tabData.map((project, index) => (
-        <div key={project.id}>
-          <ProjectCard
-            projectImage={project.projectImage}
-            projectName={project.projectTitle}
-            description={project.description}
-          />
-        </div>
-      ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-h-[230px]">
+        {tabData.map((project, index) => (
+          <div key={project.id} className="my-3">
+            <ProjectCard
+              projectImage={project.projectImage}
+              projectName={project.projectTitle}
+              description={project.description}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
