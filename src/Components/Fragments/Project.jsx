@@ -1,6 +1,24 @@
 import React from "react";
+import Tab from "../Elements/Tabs";
 
 const Project = () => {
+  const [tabData, setTabData] = React.useState("PORTOFOLIOS");
+  const [activeTab, setActiveTab] = React.useState("all");
+
+  const handleTabValueChange = (value) => {};
+
+  const PORTFOLIO_TABS = [
+    { id: "01", label: "All", value: "all" },
+    { id: "02", label: "UiUx", value: "uiux" },
+    { id: "03", label: "WebDev", value: "WebDev=" },
+    { id: "04", label: "Data", value: "Data" },
+  ];
+
+  const PORTOFOLIOS = [
+    {
+      id: "01",
+    },
+  ];
   return (
     <div id="project" className="bg-[#232325]">
       <div className="text-white pt-10">
@@ -18,6 +36,11 @@ const Project = () => {
           </p>
         </div>
       </div>
+      <Tab
+        tabList={PORTFOLIO_TABS}
+        activeTab={activeTab}
+        onChange={handleTabValueChange}
+      />
     </div>
   );
 };
