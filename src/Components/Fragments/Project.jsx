@@ -25,7 +25,8 @@ const PROJECT = [
     projectImage: DisneyClone,
     tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
-    description: "Website Portofolio with React Js and Axios ",
+    description:
+      "Website streaming mirip Disney+ dibuat dengan React.js dan Axios, menampilkan konten dinamis.",
   },
   {
     id: "02",
@@ -33,7 +34,8 @@ const PROJECT = [
     projectImage: IpaMadura,
     tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
-    description: "lorem ipsum",
+    description:
+      "Platform edukasi sains berbasis budaya Madura, menyediakan modul pembelajaran interaktif dan wisata edukasi.",
   },
   {
     id: "03",
@@ -41,23 +43,26 @@ const PROJECT = [
     projectImage: Siperang,
     tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
-    description: "Lorem Ipsum",
+    description:
+      " Sistem informasi penganggaran UKM untuk pengelolaan administrasi dan keuangan organisasi kampus.",
   },
   {
     id: "04",
-    projectTitle: "Web 1",
+    projectTitle: "Plita Kemsaba",
     projectImage: Plita,
     tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
-    description: "Web Dev",
+    description:
+      "Website informasi kegiatan dan berita terkait organisasi Kemsaba dengan desain profesional.",
   },
   {
-    id: "04",
-    projectTitle: "Data 1",
+    id: "05",
+    projectTitle: "PT AKU",
     projectImage: PtAku,
     tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
-    description: "Data",
+    description:
+      "Website company profile PT AKU yang bergerak di bidang pemasangan WiFi dan layanan teknologi lainnya.",
   },
 ];
 
@@ -97,7 +102,7 @@ const Project = () => {
         activeTab={activeTab}
         onChange={handleTabValueChange}
       />
-      <div className="w-full gap-4 flex-wrap flex justify-center py-10">
+      <div className="w-full gap-4 flex flex-wrap justify-center py-10">
         {tabData.map((project, index) => (
           <div key={project.id} className="my-3">
             <ProjectCard
