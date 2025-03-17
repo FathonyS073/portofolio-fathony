@@ -1,24 +1,51 @@
 import React from "react";
 import Tab from "../Elements/Tabs";
 
+const PROJECT_TABS = [
+  { id: "01", label: "All", value: "all" },
+  { id: "02", label: "UiUx", value: "uiux" },
+  { id: "03", label: "WebDev", value: "WebDev=" },
+  { id: "04", label: "Data", value: "Data" },
+];
+
+const PROJECT = [
+  {
+    id: "01",
+    project: "UI / UX 1",
+    type: "uiux",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
+  },
+  {
+    id: "02",
+    project: "Web 1",
+    type: "webdev",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
+  },
+  {
+    id: "03",
+    project: "Data 1",
+    type: "data",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, eveniet sint eum vitae aliquid perferendis maxime. Consectetur reiciendis aspernatur temporibus, obcaecati ad repellat quis facilis mollitia rerum in commodi molestiae!",
+  },
+];
+
 const Project = () => {
-  const [tabData, setTabData] = React.useState("PORTOFOLIOS");
+  const [tabData, setTabData] = React.useState(PROJECT);
   const [activeTab, setActiveTab] = React.useState("all");
 
-  const handleTabValueChange = (value) => {};
-
-  const PORTFOLIO_TABS = [
-    { id: "01", label: "All", value: "all" },
-    { id: "02", label: "UiUx", value: "uiux" },
-    { id: "03", label: "WebDev", value: "WebDev=" },
-    { id: "04", label: "Data", value: "Data" },
-  ];
-
-  const PORTOFOLIOS = [
-    {
-      id: "01",
-    },
-  ];
+  const handleTabValueChange = (value) => {
+    if (value == "all") {
+      setTabData(PROJECT);
+      setActiveTab("all");
+      return;
+    }
+    const updateList = PROJECT.filter((porto) => porto.type === value);
+    setTabData(updateList);
+    setActiveTab(value);
+  };
   return (
     <div id="project" className="bg-[#232325]">
       <div className="text-white pt-10">
@@ -37,7 +64,7 @@ const Project = () => {
         </div>
       </div>
       <Tab
-        tabList={PORTFOLIO_TABS}
+        tabList={PROJECT_TABS}
         activeTab={activeTab}
         onChange={handleTabValueChange}
       />
