@@ -9,7 +9,7 @@ import Siperang from "../../assets/Picture/Siperang.png";
 import IpaMadura from "../../assets/Picture/IpaMadura.png";
 import Plita from "../../assets/Picture/Plita.png";
 import PtAku from "../../assets/Picture/PtAku.png";
-import Gacoan from "../../assets/Picture/Redesain Mie Gacoan.webp";
+import Gacoan from "../../assets/Picture/Redesain-Mie-Gacoan.webp";
 import growpkl from "../../assets/Picture/GrowthPKl.webp";
 import stmik from "../../assets/Picture/STMIK_Primakara.webp";
 import kangbakso from "../../assets/Picture/KangBakso.webp";
@@ -26,7 +26,7 @@ const PROJECT = [
     id: "01web",
     projectTitle: "Website",
     projectImage: DisneyClone,
-    tech: ["React Js", "Firebase", "Axios"],
+    tech: ["React Js", "Tailwind", "Axios"],
     type: "website",
     link: "https://disney-clone-porto1-git-main-fathonysyns-projects.vercel.app/",
     description:

@@ -8,10 +8,12 @@ const ProjectCard = ({
   projectLink,
 }) => {
   return (
-    <div className=" p-2 max-h-[400px] md:min-h-[370px] rounded-xl transform transition-all hover:-translate-y-2 duration-300 border-2 border-purple-200 flex flex-col">
+    <div className=" p-2 min-h-[400px] md:min-h-[370px] rounded-xl transform transition-all hover:-translate-y-2 duration-300 border-2 border-purple-200 flex flex-col">
       <img src={projectImage} className="h-40 object-cover rounded-xl" alt="" />
       <div className="p-2 flex-grow">
-        <h2 className="font-bold text-lg mb-2 text-white">{projectName}</h2>
+        <h2 className="font-bold text-lg mb-2 text-white text-[15px] md:text-lg">
+          {projectName}
+        </h2>
         {tech.map((tech, index) => (
           <span
             key={index}
