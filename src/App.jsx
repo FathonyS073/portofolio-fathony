@@ -1,4 +1,5 @@
 import About from "./Components/Fragments/About";
+import Contacts from "./Components/Fragments/Contacts";
 import Experience from "./Components/Fragments/Experience";
 import Hero from "./Components/Fragments/Hero";
 import Navbar from "./Components/Fragments/Navbar";

@@ -10,9 +10,10 @@ import IpaMadura from "../../assets/Picture/IpaMadura.png";
 import Plita from "../../assets/Picture/Plita.png";
 import PtAku from "../../assets/Picture/PtAku.png";
 import Gacoan from "../../assets/Picture/Redesain-Mie-Gacoan.webp";
-import growpkl from "../../assets/Picture/GrowthPKl.webp";
-import stmik from "../../assets/Picture/STMIK_Primakara.webp";
-import kangbakso from "../../assets/Picture/KangBakso.webp";
+import Growpkl from "../../assets/Picture/GrowthPKl.webp";
+import Stmik from "../../assets/Picture/STMIK_Primakara.webp";
+import KangBakso from "../../assets/Picture/KangBakso.webp";
+import Lenjhelen from "../../assets/Picture/Alenjhelen.webp";
 
 const PROJECT_TABS = [
   { id: "01", label: "All", value: "all" },
@@ -75,7 +76,7 @@ const PROJECT = [
   {
     id: "03uiux",
     projectTitle: "Aplikasi Grow PKL",
-    projectImage: growpkl,
+    projectImage: Growpkl,
     tech: ["Figma"],
     link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
     type: "uiux",
@@ -95,7 +96,7 @@ const PROJECT = [
   {
     id: "04uiux",
     projectTitle: "Profile Company STMIK Primakara",
-    projectImage: stmik,
+    projectImage: Stmik,
     tech: ["Figma"],
     link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
     type: "uiux",
@@ -115,12 +116,21 @@ const PROJECT = [
   {
     id: "05uiux",
     projectTitle: "Applikasi KangBakso",
-    projectImage: kangbakso,
+    projectImage: KangBakso,
     tech: ["Figma"],
     link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
     type: "uiux",
     description:
       "Website company profile PT AKU yang bergerak di bidang pemasangan WiFi dan layanan teknologi lainnya.",
+  },
+  {
+    id: "06uiux",
+    projectTitle: "Applikasi Lenjhelenan",
+    projectImage: Lenjhelen,
+    tech: ["Figma"],
+    link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
+    type: "uiux",
+    description: "Website Aplikasi Lenjhelenan untuk wisata dimadura",
   },
 ];
 
