@@ -3,7 +3,7 @@ import AboutPicture from "../../assets/Picture/About.png";
 
 const About = () => {
   return (
-    <div className="py-10 text-white bg-[#232325] h-auto" id="about">
+    <div className="py-28 text-white bg-[#232325] h-auto" id="about">
       <div className="flex sm:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
         {/* Gambar */}
         <div className="w-full flex-1">

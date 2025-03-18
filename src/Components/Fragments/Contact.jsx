@@ -4,7 +4,7 @@ import { HiOutlineMail } from "react-icons/hi";
 const Contact = () => {
   return (
     <div
-      className="flex justify-center my-5 h-full sm:h-[70vh] items-center"
+      className="flex justify-center my-5 h-full sm:h-[70vh] items-center py-28"
       id="contact"
     >
       <div className="max-w-[1200px] mx-auto">

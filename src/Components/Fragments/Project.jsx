@@ -149,8 +149,8 @@ const Project = () => {
     setActiveTab(value);
   };
   return (
-    <div id="project" className="bg-[#232325]">
-      <div className="text-white pt-10">
+    <div id="project" className="bg-[#232325] py-28">
+      <div className="text-white">
         <div className="w-full lg:w-[60vw] mx-auto">
           <h2 className="text-3xl  text-center">
             My <span className="text-purple-400">Projects</span>

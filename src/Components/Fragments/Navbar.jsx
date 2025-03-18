@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"; // Perbaiki nama ikon
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Logo from "../../assets/Picture/Logo.png";
-import NavbarItem from "../Elements/NavbarItem";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,34 +10,47 @@ const Navbar = () => {
   };
 
   const menu = [
-    { id: 1, name: "Home" },
-    { id: 2, name: "About" },
-    { id: 3, name: "Experience" },
-    { id: 4, name: "Project" },
-    { id: 5, name: "Contact" },
+    { id: "home", name: "Home" },
+    { id: "about", name: "About" },
+    { id: "experience", name: "Experience" },
+    { id: "project", name: "Project" },
+    { id: "contact", name: "Contact" },
   ];
 
+  // Function untuk scroll ke section
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setNav(false); // Tutup menu di mode mobile
+    }
+  };
+
   return (
-    <div className=" left-0 z-50 top-0 py-7 mx-auto max-w-[1200px]">
-      <div className="flex justify-between items-center px-6">
+    <div className="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-md z-50">
+      <div className="py-5 mx-auto max-w-[1200px] flex justify-between items-center px-6">
         {/* Logo */}
         <img src={Logo} className="w-[100px] md:w-[120px]" />
 
         {/* Desktop Navbar */}
         <div className="hidden md:flex gap-9 pr-4">
           {menu.map((item) => (
-            <NavbarItem key={item.id} name={item.name} />
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="hover:text-gray-400 transition"
+            >
+              {item.name}
+            </button>
           ))}
         </div>
 
         {/* Mobile Burger Icon */}
-        <div
-          onClick={handleNav}
-          className="block md:hidden cursor-pointer text-white"
-        >
+        <div onClick={handleNav} className="block md:hidden cursor-pointer">
           {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
         </div>
       </div>
+
       {/* Mobile Menu */}
       <div
         className={`fixed left-0 top-0 w-[60%] h-full bg-gray-900 text-white p-5 ease-in-out duration-300 ${
@@ -55,7 +67,8 @@ const Navbar = () => {
           {menu.map((item) => (
             <li
               key={item.id}
-              className="text-lg font-semibold hover:text-gray-400 transition"
+              onClick={() => scrollToSection(item.id)}
+              className="text-lg font-semibold hover:text-gray-400 transition cursor-pointer"
             >
               {item.name}
             </li>
