@@ -25,6 +25,7 @@ const PROJECT = [
     projectImage: DisneyClone,
     tech: ["React Js", "Firebase", "Axios"],
     type: "WebDev",
+    link: "https://disney-clone-porto1-git-main-fathonysyns-projects.vercel.app/",
     description:
       "Website streaming mirip Disney+ dibuat dengan React.js dan Axios, menampilkan konten dinamis.",
   },
@@ -33,6 +34,7 @@ const PROJECT = [
     projectTitle: "Website IPA Madura",
     projectImage: IpaMadura,
     tech: ["React Js", "Firebase", "Axios"],
+    link: "https://ipamadura.com/",
     type: "WebDev",
     description:
       "Platform edukasi sains berbasis budaya Madura, menyediakan modul pembelajaran interaktif dan wisata edukasi.",
@@ -42,6 +44,7 @@ const PROJECT = [
     projectTitle: "SiPerang",
     projectImage: Siperang,
     tech: ["React Js", "Firebase", "Axios"],
+    link: "https://siperang.triplec.or.id/",
     type: "WebDev",
     description:
       " Sistem informasi penganggaran UKM untuk pengelolaan administrasi dan keuangan organisasi kampus.",
@@ -51,6 +54,7 @@ const PROJECT = [
     projectTitle: "Plita Kemsaba",
     projectImage: Plita,
     tech: ["React Js", "Firebase", "Axios"],
+    link: "https://sdnkemayoran1-bangkalan.sch.id/",
     type: "WebDev",
     description:
       "Website informasi kegiatan dan berita terkait organisasi Kemsaba dengan desain profesional.",
@@ -60,6 +64,7 @@ const PROJECT = [
     projectTitle: "PT AKU",
     projectImage: PtAku,
     tech: ["React Js", "Firebase", "Axios"],
+    link: "#",
     type: "WebDev",
     description:
       "Website company profile PT AKU yang bergerak di bidang pemasangan WiFi dan layanan teknologi lainnya.",
@@ -102,7 +107,8 @@ const Project = () => {
         activeTab={activeTab}
         onChange={handleTabValueChange}
       />
-      <div className="w-full gap-4 flex flex-wrap justify-center py-10">
+      {/* <div className="w-full gap-4 flex flex-wrap justify-center py-10"> */}
+      <div className="gap-8 grid grid-cols-1 md:grid-cols-4 justify-center py-10 mx-20">
         {tabData.map((project, index) => (
           <div key={project.id} className="my-3">
             <ProjectCard
@@ -110,6 +116,7 @@ const Project = () => {
               projectName={project.projectTitle}
               tech={project.tech}
               description={project.description}
+              projectLink={project.link}
             />
           </div>
         ))}
