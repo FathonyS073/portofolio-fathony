@@ -29,7 +29,7 @@ const Experience = () => {
   ];
 
   return (
-    <div className="py-10 relative">
+    <div className="py-10 relative" id="experience">
       <h2 className="mb-8 text-3xl text-white text-center">
         My <span className="text-purple-400">Experience</span>
       </h2>
