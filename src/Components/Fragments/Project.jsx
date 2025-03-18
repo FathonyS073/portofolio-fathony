@@ -31,7 +31,7 @@ const PROJECT = [
     type: "website",
     link: "https://disney-clone-porto1-git-main-fathonysyns-projects.vercel.app/",
     description:
-      "Website streaming mirip Disney+ dibuat dengan React.js dan Axios, menampilkan konten dinamis.",
+      "Disney+-like streaming website built with React.js and Axios, featuring dynamic content.",
   },
   {
     id: "01uiux",
@@ -41,7 +41,7 @@ const PROJECT = [
     link: "https://www.figma.com/proto/BwhHXmgSAMAaThAthJJpY1/Portofolio-2?node-id=76-312&t=dpPdgbNaUQ81zpGJ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A312&show-proto-sidebar=1",
     type: "uiux",
     description:
-      "Platform edukasi sains berbasis budaya Madura, menyediakan modul pembelajaran interaktif dan wisata edukasi.",
+      "Mahaltra is a mobile-based application specifically for halal tourism in Madura.",
   },
   {
     id: "02web",
@@ -51,7 +51,7 @@ const PROJECT = [
     link: "https://ipamadura.com/",
     type: "website",
     description:
-      "Platform edukasi sains berbasis budaya Madura, menyediakan modul pembelajaran interaktif dan wisata edukasi.",
+      "Madurese culture-based science education platform, providing interactive learning modules and educational tours.",
   },
   {
     id: "02uiux",
@@ -60,8 +60,7 @@ const PROJECT = [
     tech: ["Figma"],
     link: "https://dribbble.com/shots/22067779-Mie-Gacoan-Restaurant-Food-Landing",
     type: "uiux",
-    description:
-      "Saya melakukan sebuah redesain website mie gacoan dengan menggunakan figma",
+    description: "I made a design for a noodle gacoan website using figma",
   },
   {
     id: "03web",
@@ -71,7 +70,7 @@ const PROJECT = [
     link: "https://siperang.triplec.or.id/",
     type: "website",
     description:
-      " Sistem informasi penganggaran UKM untuk pengelolaan administrasi dan keuangan organisasi kampus.",
+      "UKM budgeting information system for managing campus organization administration and finances.",
   },
   {
     id: "03uiux",
@@ -81,7 +80,7 @@ const PROJECT = [
     link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
     type: "uiux",
     description:
-      "Saya membuat aplikasi grow pkl dengan menggunakan figma dengan tujuan untuk membantu pedagang kaki lima",
+      "I created a grow street vendor application using Figma with the aim of helping street vendors.",
   },
   {
     id: "04web",
@@ -91,7 +90,7 @@ const PROJECT = [
     link: "https://sdnkemayoran1-bangkalan.sch.id/",
     type: "website",
     description:
-      "Website informasi kegiatan dan berita terkait organisasi Kemsaba dengan desain profesional.",
+      "Website for information on activities and news related to the Kemsaba organization with a professional design.",
   },
   {
     id: "04uiux",
@@ -101,7 +100,7 @@ const PROJECT = [
     link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
     type: "uiux",
     description:
-      "Redesain profile company STMIK Primakara dengan menggunakan figma",
+      "I created a STMIK Primakara company profile design using Figma",
   },
   {
     id: "05web",
@@ -111,7 +110,7 @@ const PROJECT = [
     link: "#",
     type: "website",
     description:
-      "Website company profile PT AKU yang bergerak di bidang pemasangan WiFi dan layanan teknologi lainnya.",
+      "Company profile website of PT AKU which operates in the field of WiFi installation and other technology services.",
   },
   {
     id: "05uiux",
@@ -121,7 +120,7 @@ const PROJECT = [
     link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
     type: "uiux",
     description:
-      "Website company profile PT AKU yang bergerak di bidang pemasangan WiFi dan layanan teknologi lainnya.",
+      "Kang Bakso application is an application that aims to help meatball businesses, especially those that travel around.",
   },
   {
     id: "06uiux",
@@ -130,7 +129,8 @@ const PROJECT = [
     tech: ["Figma"],
     link: "https://www.figma.com/design/sWb3VctwsogngWnuAsobpt/Portfolio?node-id=101-6&p=f&t=SWv0DQhW7D8A7Adu-0",
     type: "uiux",
-    description: "Website Aplikasi Lenjhelenan untuk wisata dimadura",
+    description:
+      "The Lenjhelenan application is a platform to introduce Madurese culture.",
   },
 ];
 
