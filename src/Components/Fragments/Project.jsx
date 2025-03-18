@@ -1,5 +1,6 @@
 import React from "react";
 import Tab from "../Elements/Tabs";
+import { motion } from "framer-motion";
 
 // Import Image
 import Mahaltra from "../../assets/Picture/Mahaltra.png";
@@ -173,7 +174,13 @@ const Project = () => {
       {/* <div className="w-full gap-4 flex flex-wrap justify-center py-10"> */}
       <div className="gap-3 md:gap-8  grid grid-cols-2 md:grid-cols-4 justify-center py-5 md:py-10 mx-10 md:mx-20">
         {tabData.map((project, index) => (
-          <div key={project.id} className="my-3">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            key={project.id}
+            className="my-3"
+          >
             <ProjectCard
               projectImage={project.projectImage}
               projectName={project.projectTitle}
@@ -181,7 +188,7 @@ const Project = () => {
               description={project.description}
               projectLink={project.link}
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
