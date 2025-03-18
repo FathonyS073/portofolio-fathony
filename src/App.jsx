@@ -1,5 +1,5 @@
 import About from "./Components/Fragments/About";
-// import Contacts from "./Components/Fragments/Contacts";
+import Contact from "./Components/Fragments/Contact";
 import Experience from "./Components/Fragments/Experience";
 import Hero from "./Components/Fragments/Hero";
 import Navbar from "./Components/Fragments/Navbar";
@@ -13,6 +13,7 @@ function App() {
       <About />
       <Experience />
       <Project />
+      <Contact />
     </>
   );
 }
