@@ -50,7 +50,7 @@ const PROJECT = [
     projectTitle: "Analisis Sentimen Bareksa",
     projectImage: Bareksa,
     tech: ["Python", "Vader-Lexicon", "SVM"],
-    link: "https://www.figma.com/proto/BwhHXmgSAMAaThAthJJpY1/Portofolio-2?node-id=76-312&t=dpPdgbNaUQ81zpGJ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A312&show-proto-sidebar=1",
+    link: "https://github.com/FathonyS073/Sentimen-Analys-App-Bareksa",
     type: "data",
     description:
       "Mahaltra is a mobile-based application specifically for halal tourism in Madura.",
@@ -79,7 +79,7 @@ const PROJECT = [
     projectTitle: "Pemetaan Desa Wisata",
     projectImage: Pemetaan,
     tech: ["Python", "Self Organizing Map", "Elbow"],
-    link: "https://dribbble.com/shots/22067779-Mie-Gacoan-Restaurant-Food-Landing",
+    link: "https://clustering-potensi-desa.streamlit.app/",
     type: "data",
     description: "I made a design for a noodle gacoan website using figma",
   },
