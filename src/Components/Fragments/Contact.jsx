@@ -25,6 +25,7 @@ const Contact = () => {
           </div>
           <form
             action="https://getform.io/f/ayvkwmnb"
+            target="_blank"
             method="POST"
             className="p-6 flex flex-col justify-center max-w-[700px]"
           >

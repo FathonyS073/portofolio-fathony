@@ -15,12 +15,13 @@ import Growpkl from "../../assets/Picture/GrowthPKl.webp";
 import Stmik from "../../assets/Picture/STMIK_Primakara.webp";
 import KangBakso from "../../assets/Picture/KangBakso.webp";
 import Lenjhelen from "../../assets/Picture/Alenjhelen.webp";
-
+import Bareksa from "../../assets/Picture/Bareksa.png";
+import Pemetaan from "../../assets/Picture/Pemetaand-desa.png";
 const PROJECT_TABS = [
   { id: "01", label: "All", value: "all" },
   { id: "02", label: "UiUx", value: "uiux" },
   { id: "03", label: "Website", value: "website" },
-  { id: "04", label: "Data", value: "Data" },
+  { id: "04", label: "Data", value: "data" },
 ];
 
 const PROJECT = [
@@ -45,6 +46,16 @@ const PROJECT = [
       "Mahaltra is a mobile-based application specifically for halal tourism in Madura.",
   },
   {
+    id: "01data",
+    projectTitle: "Analisis Sentimen Bareksa",
+    projectImage: Bareksa,
+    tech: ["Python", "Vader-Lexicon", "SVM"],
+    link: "https://www.figma.com/proto/BwhHXmgSAMAaThAthJJpY1/Portofolio-2?node-id=76-312&t=dpPdgbNaUQ81zpGJ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=76%3A312&show-proto-sidebar=1",
+    type: "data",
+    description:
+      "Mahaltra is a mobile-based application specifically for halal tourism in Madura.",
+  },
+  {
     id: "02web",
     projectTitle: "Website IPA Madura",
     projectImage: IpaMadura,
@@ -61,6 +72,15 @@ const PROJECT = [
     tech: ["Figma"],
     link: "https://dribbble.com/shots/22067779-Mie-Gacoan-Restaurant-Food-Landing",
     type: "uiux",
+    description: "I made a design for a noodle gacoan website using figma",
+  },
+  {
+    id: "02data",
+    projectTitle: "Pemetaan Desa Wisata",
+    projectImage: Pemetaan,
+    tech: ["Python", "Self Organizing Map", "Elbow"],
+    link: "https://dribbble.com/shots/22067779-Mie-Gacoan-Restaurant-Food-Landing",
+    type: "data",
     description: "I made a design for a noodle gacoan website using figma",
   },
   {
